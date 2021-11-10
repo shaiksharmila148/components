@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 
-class Form extends Component {
+class Forms extends Component {
 
 constructor(props) {
     super(props)
@@ -20,7 +20,7 @@ constructor(props) {
 
     render() {
         return (
-            <form>
+            <forms>
                 <div>
                     <label>username</label>
                     <input type='text' value ={this.state.username} onChange = {this.handleUsernameChange} />
@@ -29,9 +29,9 @@ constructor(props) {
                     <label>comments</label>
                     <textarea value = {this.state.comments }></textarea>
                 </div>
-            </form>
+            </forms>
         )
     }
 }
 
-export default Form
+export default Forms
