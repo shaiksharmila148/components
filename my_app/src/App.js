@@ -17,12 +17,12 @@ function App() {
       <Greet name = "lucky"  college = "IIT">
       <p> this is children property</p>
     </Greet>
-    <Greet name = "ansari" college = "Oxford">
+    <Greet name = "ravi" college = "Oxford">
       <button>click me</button>
     </Greet>
     <Greet />
 
-    <Welcome name ="tanveer" alias = "ansari"/>
+    <Welcome name ="kumar" alias = "ravi"/>
 
     </div>
   );
