@@ -18,7 +18,7 @@ function App() {
     <div className="App">
 
 <EventBind/>
-
+s
     </div>
   );
 }
