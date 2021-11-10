@@ -4,16 +4,15 @@ class Counter extends Component {
 
     constructor(props) {
         super(props)
+
         this.state = {
             count: 0
         }
     }
-        increase() {
-        
-             /*  this.setState({ //setState method is async  --- executed on a different thread // it will re render the component
-            count: this.state.count + 1
 
-    
+    increase() {
+       /*  this.setState({                        //setState method is async  --- executed on a different thread // it will re render the component
+            count: this.state.count + 1
         },
          () => { console.log('call back value ', this.state.count) })   //callback function(=>arrow function)  -- please execute this function[callback] only after the state has been set
        
@@ -38,10 +37,10 @@ class Counter extends Component {
         return (
             <div>
                 Count - {this.state.count}
-                
                 <button onClick={() => this.increaseFive()}>increment</button>
             </div>
         )
     }
 }
+
 export default Counter

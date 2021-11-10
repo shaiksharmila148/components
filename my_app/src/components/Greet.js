@@ -1,16 +1,15 @@
 
 import React from 'react'
 
-    /* function Greet(){
-    return  <h1>welcome Lucky :)</h1>
-
+/* function Greet(){
+    return  <h1>welcome abdul</h1>
 } */
+
 //const Greet = ({name,college}) => {
     const Greet = props => {
         const {name,college} = props
     //console.log(props);
-     //props.name = 'dxc'
-
+    //props.name = 'dxc'
     return (
         <div>
             <h1> hello  {name} you are from {college}</h1>
@@ -18,6 +17,4 @@ import React from 'react'
     )
 
 }
-
-export default Greet 
-
+export default Greet
