@@ -8,6 +8,10 @@ import FunctionClick from './components/FunctionClick';
 import ClassClick from './components/ClassClick';
 import EventBind from './components/EventBind';
 import Forms from './components/Forms';
+import ClassCounter1 from './components/hooks/useeffect/ClassCounter1';
+import CounterHook1 from './components/hooks/useeffect/CounterHook1';
+
+
 
 function App() {
   return (
@@ -24,6 +28,7 @@ function App() {
 <UserGreeting />
 <ParentComponent />
       <EventBind />
+      <CounterHook1 />
       </div>
   );
 }
