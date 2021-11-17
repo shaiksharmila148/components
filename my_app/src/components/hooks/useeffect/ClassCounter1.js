@@ -9,6 +9,7 @@ export class ClassCounter1 extends Component {
     
         this.state = {
              count: 0
+             name: ''
         }
     }
 
@@ -23,12 +24,22 @@ export class ClassCounter1 extends Component {
         effect is didUpdate
      */
     componentDidUpdate(prevProps,prevState){
+        if (prevState.count != this.state.count) {
+            console.log('updating doc title')
         document.title = `clicked ${this.state.count} times`
     }
+}
+ //problem is every time i add a character to the input field, state is getting updated and component is being re rendered
+    //i want componentDidUpdate to be called only when count increases
     
     render() {
         return (
             <div>
+                <input
+                    type='text'
+                    value={this.state.name}
+                    onChange={e => { this.setState({ name: e.target.value }) }}
+                />
                 <button 
                 onClick ={ 
                     () => this.setState({count: this.state.count + 1})
